@@ -1,0 +1,24 @@
+@import '../../../shared/css/general-section.scss';
+
+.section1 {
+    @extend .section;
+    background-image:linear-gradient( 65deg,rgba(8, 19, 51, 0.80) 35%,rgba(79, 112, 202,.0)), 
+    url('../../../assets/img/living1.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+.section2 {
+    @extend .section;
+    flex-direction: row-reverse;
+    background-image:linear-gradient( 130deg,rgba(100, 77, 15, 0) 40%,rgba(100, 77, 15, 0.80) 65%), 
+    url('../../../assets/img/living2.jpg');
+}
