@@ -13,7 +13,13 @@
     justify-content: center;
     width: 35%;
     height: 100%;
+    padding-bottom: 90px;
 }
+
+.text-part > h1 {
+    margin-bottom: 80px;
+}
+
 
 .button-part {
     height: 100%;
@@ -22,4 +28,42 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 120px;
+}
+
+.button-part-btn {
+    color: black;
+    width: fit-content;
+    padding: 12px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-part-btn:hover {
+    color: black;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+    .section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-part {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .button-part {
+        width: 100%;
+        height: 33%;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0px;
+    }
 }
