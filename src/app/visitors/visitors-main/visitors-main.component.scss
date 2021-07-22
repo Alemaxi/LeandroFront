@@ -36,7 +36,7 @@
         @extend .section;
         background-image:linear-gradient( 65deg,rgba(8, 19, 51, 0.80) 35%,rgba(8, 19, 51,.6)), 
         url('../../../assets/img/living1.jpg');
-        background-size:1920px 1020px;
+        background-size: 40cm 27cm;
     }
 
 
@@ -44,6 +44,6 @@
         flex-direction: column;
         background-image:linear-gradient( 130deg,rgba(100, 77, 15, .6) 40%,rgba(100, 77, 15, 0.80) 65%), 
         url('../../../assets/img/living2.jpg');
-        background-size: 1920px 850px;
+        background-size: 40cm 27cm;
     }
 }
