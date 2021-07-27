@@ -6,6 +6,7 @@ import { CommentsModule } from '../../shared/material-modules/comments/comments.
 
 import { VisitorsMainComponent } from './visitors-main/visitors-main.component';
 import { VisitorsCommentsComponent } from './visitors-comments/visitors-comments.component';
+import { VisitorsExamplesComponent } from './visitors-examples/visitors-examples.component';
 
 const route: Route[] = [
   {path:'', component: VisitorsMainComponent},
@@ -16,6 +17,7 @@ const route: Route[] = [
   declarations: [
     VisitorsMainComponent,
     VisitorsCommentsComponent,
+    VisitorsExamplesComponent,
   ],
   imports: [
     RouterModule.forChild(route),
