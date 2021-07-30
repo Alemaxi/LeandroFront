@@ -3,6 +3,7 @@ import { Route,RouterModule } from '@angular/router'
 
 //material modules
 import { CommentsModule } from '../../shared/material-modules/comments/comments.module';
+import { ExamplesModule } from '../../shared/material-modules/examples/examples.module';
 
 import { VisitorsMainComponent } from './visitors-main/visitors-main.component';
 import { VisitorsCommentsComponent } from './visitors-comments/visitors-comments.component';
@@ -22,6 +23,7 @@ const route: Route[] = [
   imports: [
     RouterModule.forChild(route),
     CommentsModule,
+    ExamplesModule,
   ]
 })
 export class VisitorsModule { }
