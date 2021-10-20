@@ -4,74 +4,15 @@
 
     <div class="comments-block">
         
-        <mat-card class="comment-card">
+        <mat-card class="comment-card" *ngFor="let item of comments">
             <mat-card-header>
-                <mat-card-title>Nome aqui</mat-card-title>
-                <mat-card-subtitle>Cidade aqui</mat-card-subtitle>
+                <mat-card-title>{{item.name}}</mat-card-title>
+                <mat-card-subtitle>{{item.city}}</mat-card-subtitle>
             </mat-card-header>
             
             <mat-card-content>
-                Aqui vai o comentário do usuário.
+                {{item.comment}}
             </mat-card-content>
-    
-        </mat-card>
-        <mat-card class="comment-card">
-            <mat-card-header>
-                <mat-card-title>Nome aqui</mat-card-title>
-                <mat-card-subtitle>Cidade aqui</mat-card-subtitle>
-            </mat-card-header>
-            
-            <mat-card-content>
-                Aqui vai o comentário do usuário.
-            </mat-card-content>
-    
-        </mat-card>
-        <mat-card class="comment-card">
-            <mat-card-header>
-                <mat-card-title>Nome aqui</mat-card-title>
-                <mat-card-subtitle>Cidade aqui</mat-card-subtitle>
-            </mat-card-header>
-            
-            <mat-card-content>
-                Aqui vai o comentário do usuário.
-            </mat-card-content>
-    
-        </mat-card>
-        <mat-card class="comment-card">
-            <mat-card-header>
-                <mat-card-title>Nome aqui</mat-card-title>
-                <mat-card-subtitle>Cidade aqui</mat-card-subtitle>
-            </mat-card-header>
-            
-            <mat-card-content>
-                Aqui vai o comentário do usuário.
-            </mat-card-content>
-    
-        </mat-card>
-        <mat-card class="comment-card">
-            <mat-card-header>
-                <mat-card-title>Nome aqui</mat-card-title>
-                <mat-card-subtitle>Cidade aqui</mat-card-subtitle>
-            </mat-card-header>
-            
-            <mat-card-content>
-                Aqui vai o comentário do usuário.
-            </mat-card-content>
-    
-        </mat-card>
-        <mat-card class="comment-card">
-            <mat-card-header>
-                <mat-card-title>Nome aqui</mat-card-title>
-                <mat-card-subtitle>Cidade aqui</mat-card-subtitle>
-            </mat-card-header>
-            
-            <mat-card-content>
-                Aqui vai o comentário do usuário.
-            </mat-card-content>
-    
-            <mat-card-footer>
-                oi
-            </mat-card-footer>
     
         </mat-card>
 

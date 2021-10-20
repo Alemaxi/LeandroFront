@@ -9,6 +9,9 @@ const route: Route[] =[
   {
     path:'manager',
     loadChildren: () => import('./manager/manager.module').then(m => m.ManagerModule),
+  },
+  {
+    path:'**', redirectTo:'/',pathMatch:'full'
   }
 ]
 

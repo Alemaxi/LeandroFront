@@ -11,7 +11,6 @@
 }
 
 .comments-block {
-    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -19,12 +18,11 @@
     
     .comment-card {
         box-sizing: border-box;
-        margin: 6px;
+        margin: 8px;
         width: 48%;
         height: auto;
         border-style: solid;
         border-width: 1px;
-        ;
     }
 }
 
@@ -33,6 +31,7 @@
 
 @media screen and (max-width: 780px) {
     .comments-block {
+        justify-content: center;
         .comment-card {
             width: 90%;
         }

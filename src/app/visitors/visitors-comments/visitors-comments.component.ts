@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentsService } from '../../../shared/services/comments.service';
+import { Comment } from '../../../shared/classes/comment';
 
 @Component({
   selector: 'app-visitors-comments',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisitorsCommentsComponent implements OnInit {
 
-  constructor() { }
+  comments: Comment[] = [];
+
+  constructor(protected commentsService:CommentsService) { }
 
   ngOnInit(): void {
+    this.commentsService.takeComments().subscribe( 
+      comments => {
+        this.comments = comments;
+      }
+    )
   }
 
 }

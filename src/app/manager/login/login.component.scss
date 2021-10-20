@@ -1,0 +1,13 @@
+@import url("../../shared/css/box-form.scss");
+
+.actionsButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.changePassword {
+    margin-top: 15px;
+    cursor: pointer;
+}

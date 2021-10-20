@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule,} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Route,RouterModule } from '@angular/router'
+import { FormsModule } from '@angular/forms';
 
 //material modules
 import { CommentsModule } from '../../shared/material-modules/comments/comments.module';
@@ -21,9 +23,11 @@ const route: Route[] = [
     VisitorsExamplesComponent,
   ],
   imports: [
+    CommonModule,
     RouterModule.forChild(route),
     CommentsModule,
     ExamplesModule,
+    FormsModule,
   ]
 })
 export class VisitorsModule { }
