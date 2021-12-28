@@ -1,21 +1,77 @@
 <article class="container-fluid comments-section">
 
-    <h3>Comentários</h3>
+    <h2>Comentários</h2>
 
-    <div class="comments-block">
+    <div id="demo" class="carousel slide carousel-box" data-ride="carousel">
         
-        <mat-card class="comment-card" *ngFor="let item of comments">
-            <mat-card-header>
-                <mat-card-title>{{item.name}}</mat-card-title>
-                <mat-card-subtitle>{{item.city}}</mat-card-subtitle>
-            </mat-card-header>
-            
-            <mat-card-content>
-                {{item.comment}}
-            </mat-card-content>
-    
-        </mat-card>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="user">
+                    <h3>Thamires</h3>
+                    <span class="city">Duque de caxias</span>
+                </div>
+                <span class="comment">
+                    "No mesmo dia ele já estava seco. Meu marido e eu amamos o seu Trabalho.
+                    Ficou ótimo!"
+                </span>
+            </div>
 
+            <div class="carousel-item">
+
+                <div class="user">
+                    <h2>Felipe</h2>
+                    <span class="city">Nova iguaçu</span>
+                </div>
+
+                <span class="comment">
+                    "Gostei muito. Foi feito um ótimo serviço!"
+                </span>
+
+            </div>
+
+            <div class="carousel-item">
+                <div class="user">
+                    <h2>Renata penha</h2>
+                    <span class="city">Nova Iguaçu</span>
+                </div>
+
+                <span class="comment">
+                    "Ótimo serviço"
+                </span>
+            </div>
+
+            <div class="carousel-item">
+                <div class="user">
+                    <h2>Flavia Gil</h2>
+                    <span class="city">Heliópolis</span>
+                </div>
+
+                <span class="comment">
+                    "Ficou ótimo! Estou recomendando a todos que conheço!!"
+                </span>
+            </div>
+
+            <div class="carousel-item">
+                <div class="user">
+                    <h2>Viviane</h2>
+                    <span class="city">Belford roxo</span>
+                </div>
+                <span class="comment">
+                    "Secou tudo direitinho. Ótimo trabalho!"
+                </span>
+            </div>
+
+            <div class="carousel-item">
+                <div class="user">
+                    <h2>Gabriele</h2>
+                    <span class="city">Nova Iguaçu</span>
+                </div>
+                <span class="comment">
+                    "Adoramos! Ficou perfeito! Daqui 6 meses entraremos em contato de novo
+                    para manter o serviço!"
+                </span>
+            </div>
+        </div>
     </div>
 
 </article>

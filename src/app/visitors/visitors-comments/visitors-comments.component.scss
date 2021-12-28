@@ -1,72 +1,36 @@
+@import url("./../../shared/css/carousel-general.scss");
+
 .comments-section {
     scroll-behavior: smooth;
     color: whitesmoke;
     width: 100%;
     padding: 10px;
     padding-top: 35px;
-    height: 600px;
+    height: 500px;
     text-align: center;
     background-color: rgba(8, 19, 51, 0.80);
-    overflow: scroll;
 }
 
-.comments-block {
+.carousel-box {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    
-    .comment-card {
-        box-sizing: border-box;
-        margin: 8px;
-        width: 48%;
-        height: auto;
-        border-style: solid;
-        border-width: 1px;
-    }
+    align-items: center;
+}
+
+
+.user {
+    margin-bottom: 45px;
+}
+
+.city {
+    font-size: 12px;
+}
+
+.comment {
+    font-size: 21px;
+    font-style: italic;
 }
 
 
 
-
-@media screen and (max-width: 780px) {
-    .comments-block {
-        justify-content: center;
-        .comment-card {
-            width: 90%;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-    height: 0px;
-}
-  
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-  
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(243, 194, 31);
-    border-radius: 10px;
-}
-
-//corner
-::-webkit-scrollbar-corner {
-      display: none;
-}

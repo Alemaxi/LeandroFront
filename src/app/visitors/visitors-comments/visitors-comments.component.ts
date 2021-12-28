@@ -9,16 +9,9 @@ import { Comment } from '../../../shared/classes/comment';
 })
 export class VisitorsCommentsComponent implements OnInit {
 
-  comments: Comment[] = [];
-
   constructor(protected commentsService:CommentsService) { }
 
   ngOnInit(): void {
-    this.commentsService.takeComments().subscribe( 
-      comments => {
-        this.comments = comments;
-      }
-    )
   }
 
 }

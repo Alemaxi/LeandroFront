@@ -2,12 +2,13 @@
 
 .section1 {
     @extend .section;
+    text-align: center;
     background-image:linear-gradient( 65deg,rgba(8, 19, 51, 0.80) 35%,rgba(79, 112, 202,.0)), 
     url('../../../assets/img/living1.jpg');
 
-    .button-part {
+    /*.button-part {
         align-items: flex-end;
-    }
+    }*/
 }
 
 .section1 > .button-part > .button-part-btn:hover {
@@ -21,8 +22,9 @@
 
 .section2 {
     @extend .section;
-    flex-direction: row-reverse;
-    background-image:linear-gradient( 130deg,rgba(100, 77, 15, 0) 40%,rgba(100, 77, 15, 0.80) 65%), 
+    flex-direction: column;
+    align-items: flex-end;
+    background-image:linear-gradient( 130deg,rgba(100, 77, 15, 0) 25%,rgba(100, 77, 15, 0.80) 55%), 
     url('../../../assets/img/living2.jpg');
 }
 

@@ -1,9 +1,26 @@
 <article class="examples-box">
     <H3>Trabalhos anteriores</H3>
 
-    <mat-tab-group>
-        <mat-tab label="Fotos"> Content 1 </mat-tab>
-        <mat-tab label="Videos"> Content 2 </mat-tab>
-      </mat-tab-group>
+    <div id="demo2" class="carousel slide carousel-box" data-ride="carousel2">
+
+        
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src={{filesImg[5]}} alt="" width="100%">
+        </div>
+        <div class="carousel-item" *ngFor="let item of filesImg">
+          <img src={{item}} alt="" width="100%">
+        </div>
+      </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo2" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
       
 </article>
